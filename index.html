@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>charlieeeeee</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" charset="utf-8">
+  </head>
+    <body id="body">
+      <div id="main">
+        <input type="button" name="yodaBtn" id="yoda" value="click me!" onclick="yoda()">
+        </div>
+
+      <!-- function to dynamically add yoda gif -->
+      <script type="text/javascript" >
+        function yoda(){
+          document.getElementById('main').innerHTML =
+            '<img src="images/yoda.gif">' +
+            '<input type="button" name="pandaBtn" id="panda" value="click for more dancing!" onclick="panda()">';
+        }
+      </script>
+
+      <!-- function to dynamically add panda gif -->
+      <script type="text/javascript" >
+        function panda(){
+          var main = document.getElementById('main');
+          // document.getElementById('body').background-image = 'none';
+          main.innerHTML = '<p>LALALALA DOO DOO DO DOOOOOO</p><img src="images/panda.gif">';
+          alert('how youuuuuuuuuuu doin\' lindsey??');
+        }
+      </script>
+
+    </body>
+</html>
